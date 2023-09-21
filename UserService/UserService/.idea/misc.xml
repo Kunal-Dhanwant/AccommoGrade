@@ -8,6 +8,8 @@
         <option value="$PROJECT_DIR$/../../HotelService/HotelService/pom.xml" />
         <option value="$PROJECT_DIR$/../../RatingService/RatingService/pom.xml" />
         <option value="$PROJECT_DIR$/../../ServiceRegistry/ServiceRegistry/pom.xml" />
+        <option value="$PROJECT_DIR$/../../APIGateway/APIGateway/pom.xml" />
+        <option value="$PROJECT_DIR$/../../Config Server/Config-Server/pom.xml" />
       </list>
     </option>
   </component>
