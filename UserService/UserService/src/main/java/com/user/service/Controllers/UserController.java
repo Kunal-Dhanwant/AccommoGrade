@@ -4,6 +4,8 @@ package com.user.service.Controllers;
 import com.user.service.Payload.ApiResponse;
 import com.user.service.entities.User;
 import com.user.service.services.UserService;
+import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
+import io.github.resilience4j.retry.annotation.Retry;
 import org.hibernate.query.NativeQuery;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -33,6 +35,8 @@ public class UserController {
     //  update user
 
     @PutMapping("/{userId}")
+
+
     public ResponseEntity<User> updateUser(@RequestBody User user, @PathVariable String userId){
 
         User updatedUser = userService.updateUser(userId, user);
@@ -42,6 +46,16 @@ public class UserController {
 
 
 
+    }
+    //creating fall back  method for circuitbreaker
+
+    public ResponseEntity<User> ratingHotelFallback(String userId, Exception ex) {
+//        logger.info("Fallback is executed because service is down : ", ex.getMessage());
+
+        ex.printStackTrace();
+
+        User user = User.builder().email("dummy@gmail.com").name("Dummy").about("This user is created dummy because some service is down").userId("141234").build();
+        return new ResponseEntity<>(user, HttpStatus.BAD_REQUEST);
     }
 
     @DeleteMapping("/{userId}")
@@ -72,6 +86,8 @@ public class UserController {
     }
 
     @GetMapping("/{userId}")
+  //  @CircuitBreaker(name = "ratingHotelBreaker", fallbackMethod = "ratingHotelFallback")
+    @Retry(name = "ratingHotelService", fallbackMethod = "ratingHotelFallback")
     public ResponseEntity<User> getUserById(@PathVariable String userId){
 
         User user1 = userService.getUserById(userId);

@@ -83,7 +83,7 @@ public class UserServiceImpl implements UserService {
         //  featch rating of this user  with the help of  restTempalet or
         // by communicating with Rating service
 
-       Rating[] ratingsOfUSERrarray= restTemplate.getForObject("http://RATING-SERVICE/rating/user/"+user1.getUserId(), Rating[].class);
+       Rating[] ratingsOfUSERrarray= restTemplate.getForObject("http://RATING-SERVICE/ratings/user/"+user1.getUserId(), Rating[].class);
 
        List<Rating>  ratingsOfUSER = Arrays.stream(ratingsOfUSERrarray).toList();
 

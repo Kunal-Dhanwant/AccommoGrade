@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9bddde0-d8c2-4aaf-a9a0-0f43924c6282" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../RatingService/RatingService/src/main/java/com/rating/service/Controllers/RatingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../RatingService/RatingService/src/main/java/com/rating/service/Controllers/RatingController.java" afterDir="false" />
-    </list>
+    <list default="true" id="b9bddde0-d8c2-4aaf-a9a0-0f43924c6282" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,40 +42,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "D:/projects/spring boot/microservice learn/Config Server/Config-Server",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/projects/spring boot/microservice learn/Config Server/Config-Server&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.user.service.entities.Hotel" />
       <recent name="com.user.service.entities" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ConfigServerApplication">
+  <component name="RunManager" selected="Application.UserServiceApplication">
     <configuration name="ApiGatewayApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.gateway.APIGateway.ApiGatewayApplication" />
       <module name="APIGateway" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.gateway.APIGateway.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ConfigServerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ServerConfig.ConfigServerApplication" />
-      <module name="Config-Server" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ServerConfig.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -124,12 +109,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.user.service.UserServiceApplication" />
+      <module name="UserService" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.user.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ConfigServerApplication" />
+        <item itemvalue="Application.UserServiceApplication" />
+        <item itemvalue="Application.RatingServiceApplication" />
         <item itemvalue="Application.HotelServiceApplication" />
         <item itemvalue="Application.ApiGatewayApplication" />
-        <item itemvalue="Application.RatingServiceApplication" />
         <item itemvalue="Application.ServiceRegistryApplication" />
       </list>
     </recent_temporary>
